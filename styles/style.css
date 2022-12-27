@@ -19,6 +19,10 @@
   flex-direction: column;
 }
 
+.text-align_center {
+  text-align: center;
+}
+
 /*Header*/
 /*.header {*/
 /*  height: 100vh;*/
@@ -26,6 +30,7 @@
 /*  max-height: 756px;*/
 /*  display: flex;*/
 /*  position: relative;*/
+/*  background-color: #f2f2f2;*/
 /*}*/
 
 /*.header__title {*/
@@ -47,6 +52,7 @@
 /*  position: absolute;*/
 /*  bottom: 30px;*/
 /*  left: 64px;*/
+/*  z-index: 2;*/
 /*}*/
 
 /*.header__link {*/
@@ -60,6 +66,7 @@
 /*  bottom: 0;*/
 /*  width: 765px;*/
 /*  height: 609px;*/
+/*  z-index: 1;*/
 /*}*/
 
 /*.header__square-pic {*/
@@ -69,7 +76,7 @@
 /*  position: absolute;*/
 /*  top: 64px;*/
 /*  right: 0;*/
-/*  z-index: -1;*/
+/*  z-index: 0;*/
 /*}*/
 
 /*.logo {*/
@@ -133,59 +140,93 @@
 /*}*/
 
 /*Digits*/
-.digits {
+/*.digits {*/
+/*  align-items: center;*/
+/*}*/
+
+/*.section-title {*/
+/*  width: 60%;*/
+/*  line-height: 1.15;*/
+/*  font-size: 60px;*/
+/*  font-weight: 600;*/
+/*  margin-top: 100px;*/
+/*  margin-bottom: 0;*/
+/*}*/
+
+/*.section-subtitle {*/
+/*  width: 60%;*/
+/*  line-height: 34px;*/
+/*  font-size: 24px;*/
+/*  font-weight: normal;*/
+/*  margin-top: 20px;*/
+/*  margin-bottom: 0;*/
+/*}*/
+
+/*.table {*/
+/*  max-width: 1100px;*/
+/*  display: flex;*/
+/*  flex-wrap: wrap;*/
+/*  justify-content: space-between;*/
+/*}*/
+
+/*.table__cell {*/
+/*  flex-basis: 250px;*/
+/*  margin-top: 60px;*/
+/*}*/
+
+/*.table__heading {*/
+/*  line-height: 1.15;*/
+/*  font-size: 24px;*/
+/*  font-weight: 600;*/
+/*  margin: 0;*/
+/*}*/
+
+/*.table__text {*/
+/*  line-height: 1.2;*/
+/*  font-size: 18px;*/
+/*  font-weight: normal;*/
+/*  margin-top: 20px;*/
+/*  margin-bottom: 0;*/
+/*}*/
+
+/*Feynman*/
+.feynman {
+  height: 890px;
+  background-color: #f2f2f2;
+  background-image: url('../images/feynman.png');
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  position: relative;
   align-items: center;
 }
 
-.section-title {
-  width: 60%;
-  line-height: 1.15;
-  font-size: 60px;
-  font-weight: 600;
+.feynman__title {
+  width: 648px;
   margin-top: 100px;
   margin-bottom: 0;
-}
-
-.section-subtitle {
-  width: 60%;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-  margin-top: 20px;
-  margin-bottom: 0;
-}
-
-.table {
-  max-width: 1100px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.table__cell {
-  flex-basis: 250px;
-  margin-top: 60px;
-}
-
-.table__heading {
   line-height: 1.15;
-  font-size: 24px;
+  font-size: 120px;
   font-weight: 600;
-  margin: 0;
 }
 
-.table__text {
-  line-height: 1.2;
-  font-size: 18px;
+.feynman__subtitle {
+  margin-top: 70px;
+}
+
+.feynman__link {
+  text-decoration: none;
+  color: #2f80ed;
+  position: absolute;
+  top: 50%;
+  right: 0;
+
+}
+
+.text-size_m {
+  line-height: 51px;
+  font-size: 36px;
   font-weight: normal;
-  margin-top: 20px;
-  margin-bottom: 0;
 }
-
-.text-align_center {
-  text-align: center;
-}
-
 
 
 /* и элемента с модификатором вида ключ-значение */
