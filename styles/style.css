@@ -45,7 +45,7 @@
 
 .header__subtitle {
   margin: 0;
-  max-width: 338px;
+  max-width: 388px;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
@@ -133,7 +133,7 @@
   margin-bottom: 0;
 }
 
-.two-columns_span_accent {
+.two-columns__span-accent {
   line-height: 34px;
   font-size: 24px;
   font-weight: 600;
@@ -151,7 +151,8 @@
   line-height: 1.15;
   font-size: 60px;
   font-weight: 600;
-  margin-top: 100px;
+  text-align: center;
+  margin-top: 0;
   margin-bottom: 0;
 }
 
@@ -160,12 +161,14 @@
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
+  text-align: center;
   margin-top: 20px;
   margin-bottom: 0;
 }
 
 .table {
   max-width: 1100px;
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -208,25 +211,27 @@
   line-height: 1.15;
   font-size: 120px;
   font-weight: 600;
+  text-align: center;
 }
 
 .feynman__subtitle {
   margin-top: 70px;
+  margin-bottom: 0;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
 }
 
 .feynman__link {
   text-decoration: none;
   color: #2f80ed;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
   position: absolute;
   top: 50%;
   right: 48px;
 
-}
-
-.feynman_text-size_m {
-  line-height: 51px;
-  font-size: 36px;
-  font-weight: normal;
 }
 
 /*Kaufman*/
@@ -237,24 +242,29 @@
   z-index: 0;
   overflow: hidden;
 }
-.kaufman_theme_dark {
-  color: #f2f2f2;
-}
-
-.table__theme_dark {
-  margin: 0 auto 90px;
-}
 
 .section-title_theme_dark {
   margin-top: 90px;
+  color: #f2f2f2;
+}
+
+.section-subtitle_theme_dark {
+  color: #f2f2f2;
+}
+
+.table_theme_dark {
+  margin: 0 auto 90px;
 }
 
 .table__cell_theme_dark {
   flex-basis: 200px;
   margin-top: 80px;
+  color: #f2f2f2;
 }
 
 .kaufman__triangle {
+  background-image: url('../images/kaufman-triangle.svg');
+  background-size: cover;
   width: 877px;
   height: 877px;
   position: absolute;
@@ -267,23 +277,26 @@
   min-height: 350px;
   padding: 60px 0 40px;
   background-color: #1f1f1f;
+  box-sizing: border-box;
 }
 
 .footer__columns {
-  min-height: 300px;
+  min-height: 250px;
   width: 90%;
   color:  #f2f2f2;
   margin: auto;
+  display: flex;
   justify-content: space-between;
 }
 
-.footer__columns_content_copyright {
+.footer__column_content_copyright {
   flex-basis: 711px;
   justify-content: space-between;
 }
 
 .logo_place_footer {
   background-image: url('../images/logo_place_footer.svg');
+  background-repeat: no-repeat;
 }
 
 .footer__author {
