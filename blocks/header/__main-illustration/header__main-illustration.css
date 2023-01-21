@@ -3,6 +3,8 @@
   right: 0;
   bottom: 0;
   width: 765px;
-  height: 609px;
+  height: 608px;
   z-index: 0;
+  object-fit: contain;
+  object-position: bottom right;
 }

@@ -5,4 +5,6 @@
   text-decoration: none;
   color: #2f80ed;
   align-items: center;
+  margin: 0 0 0 48px;
+  align-self: flex-start;
 }
